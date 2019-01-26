@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 class ProductDetails extends Component {
   handleSave = () => {
-    // Navigate to /products
+    // Navigate to /products by push() or replace()
+    this.props.history.push("/products");
   };
 
   render() {
